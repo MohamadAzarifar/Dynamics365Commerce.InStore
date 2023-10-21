@@ -1,0 +1,12 @@
+<Project>
+  <Import Project="..\..\..\repo.props" />
+
+  <PropertyGroup>
+    <PackagePublisher Condition="'$(PackagePublisher)' == ''">$(Publisher)</PackagePublisher>
+    <PackagePublisherDisplayName Condition="'$(PackagePublisherDisplayName)' == ''">$(PublisherDisplayName)</PackagePublisherDisplayName>
+    <PackageVersion Condition="'$(PackageVersion)' == ''">$(Version)</PackageVersion>
+    <PackageName Condition="'$(PackageName)' == ''">Golrang.RetailCustomer</PackageName>
+    <PackageDisplayName Condition="'$(PackageDisplayName)' == ''">Retail Customer</PackageDisplayName>
+    <PackageDescription Condition="'$(PackageDescription)' == ''">New definition for retail's pos customer.</PackageDescription>
+  </PropertyGroup>
+</Project>
