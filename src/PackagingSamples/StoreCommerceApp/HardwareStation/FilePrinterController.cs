@@ -7,7 +7,7 @@
  * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
  */
 
-namespace Contoso
+namespace Golrang
 {
     namespace Commerce.HardwareStation
     {
@@ -37,7 +37,7 @@ namespace Contoso
                 try
                 {
                     // Add here the code to send the PDF file to the printer.
-                    var directory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "Contoso", "FilePrinter");
+                    var directory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "Golrang", "FilePrinter");
                     if (!Directory.Exists(directory))
                     {
                         Directory.CreateDirectory(directory);

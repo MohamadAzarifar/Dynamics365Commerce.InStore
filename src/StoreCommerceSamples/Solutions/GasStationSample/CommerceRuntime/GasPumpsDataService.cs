@@ -217,7 +217,7 @@
 
         private string GetGasolineItemId(Request request)
         {
-            if (request.RequestContext.Runtime.Configuration.Settings.TryGetValue("ext.Contoso.GasolineItemId", out string settingValue) && !string.IsNullOrWhiteSpace(settingValue))
+            if (request.RequestContext.Runtime.Configuration.Settings.TryGetValue("ext.Golrang.GasolineItemId", out string settingValue) && !string.IsNullOrWhiteSpace(settingValue))
             {
                 return settingValue;
             }

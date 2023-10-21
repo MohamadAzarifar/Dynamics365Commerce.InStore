@@ -1,4 +1,4 @@
-﻿namespace Contoso.HardwareStation.Installer
+﻿namespace Golrang.HardwareStation.Installer
 {
     /// <summary>
     /// Class containing sample configuration key name constant values.

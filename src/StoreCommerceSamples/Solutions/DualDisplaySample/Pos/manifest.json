@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "./devDependencies/schemas/manifestSchema.json",
   "name": "DualDisplaySample",
-  "publisher": "Contoso",
+  "publisher": "Golrang",
   "version": "1.0.0.0",
   "minimumPosVersion": "9.32.0.0",
   "dependencies": [
@@ -13,7 +13,7 @@
   ],
   "components": {
     "resources": {
-      "supportedUICultures": [ "en-US" ],
+      "supportedUICultures": ["en-US"],
       "fallbackUICulture": "en-US",
       "culturesDirectoryPath": "Resources",
       "stringResourcesFileName": "resources.resjson"

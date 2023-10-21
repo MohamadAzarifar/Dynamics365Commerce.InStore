@@ -11,10 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CommerceRuntime\Contoso.HardwareStationSamples.CommerceRuntime.csproj">
+    <ProjectReference Include="..\CommerceRuntime\Golrang.HardwareStationSamples.CommerceRuntime.csproj">
 	  <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 	</ProjectReference>
-	<ProjectReference Include="..\PeripheralCustomizations\Contoso.PeripheralCustomizations.csproj">
+	<ProjectReference Include="..\PeripheralCustomizations\Golrang.PeripheralCustomizations.csproj">
 	  <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 	</ProjectReference>
   </ItemGroup>

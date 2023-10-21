@@ -3,20 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 15.0.0.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.PaymentDeviceSample", "PaymentDevice\Contoso.PaymentDeviceSample.csproj", "{B5561175-66C2-4FA7-A10E-0296EB3BC292}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Golrang.PaymentDeviceSample", "PaymentDevice\Golrang.PaymentDeviceSample.csproj", "{B5561175-66C2-4FA7-A10E-0296EB3BC292}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.PeripheralCustomizations", "PeripheralCustomizations\Contoso.PeripheralCustomizations.csproj", "{52930FB4-3599-4CC3-B7FB-DEC7056CE9C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Golrang.PeripheralCustomizations", "PeripheralCustomizations\Golrang.PeripheralCustomizations.csproj", "{52930FB4-3599-4CC3-B7FB-DEC7056CE9C1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.HardwareStationSamples.Installer", "HardwareStation.Installer\Contoso.HardwareStationSamples.Installer.csproj", "{B133C2C6-0E0C-41AE-ACCF-2948812890CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Golrang.HardwareStationSamples.Installer", "HardwareStation.Installer\Golrang.HardwareStationSamples.Installer.csproj", "{B133C2C6-0E0C-41AE-ACCF-2948812890CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AF807C19-0008-481E-9C48-A2BD5F8A7212}"
 	ProjectSection(SolutionItems) = preProject
 		CustomizationPackage.props = CustomizationPackage.props
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.HardwareStationSamples.CommerceRuntime", "CommerceRuntime\Contoso.HardwareStationSamples.CommerceRuntime.csproj", "{38CEA715-8D77-4B6D-8B9F-2F3816108613}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Golrang.HardwareStationSamples.CommerceRuntime", "CommerceRuntime\Golrang.HardwareStationSamples.CommerceRuntime.csproj", "{38CEA715-8D77-4B6D-8B9F-2F3816108613}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.HardwareStationSamples.StoreCommerce.Installer", "StoreCommerce.Installer\Contoso.HardwareStationSamples.StoreCommerce.Installer.csproj", "{CD6D302B-AADD-48CD-ADEC-DFD31ABC0B7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Golrang.HardwareStationSamples.StoreCommerce.Installer", "StoreCommerce.Installer\Golrang.HardwareStationSamples.StoreCommerce.Installer.csproj", "{CD6D302B-AADD-48CD-ADEC-DFD31ABC0B7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

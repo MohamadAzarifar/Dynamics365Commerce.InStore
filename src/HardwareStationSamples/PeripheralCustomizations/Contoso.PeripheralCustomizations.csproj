@@ -2,7 +2,7 @@
     <Import Project="..\CustomizationPackage.props" />
 
     <PropertyGroup>
-        <RootNamespace>Contoso.HardwareStation.Peripherals.PeripheralCustomizations</RootNamespace>
+        <RootNamespace>Golrang.HardwareStation.Peripherals.PeripheralCustomizations</RootNamespace>
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
     <ItemGroup>

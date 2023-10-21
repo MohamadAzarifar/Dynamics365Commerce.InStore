@@ -10,13 +10,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CommerceRuntime\Contoso.GasStationSample.CommerceRuntime.csproj" />
-    <ProjectReference Include="..\Pos\Contoso.GasStationSample.Pos.csproj" />
+    <ProjectReference Include="..\CommerceRuntime\Golrang.GasStationSample.CommerceRuntime.csproj" />
+    <ProjectReference Include="..\Pos\Golrang.GasStationSample.Pos.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <!-- Settings included in the CommerceRuntimeExtensionSettings item group will be added to the generated CommerceRuntime config file and available at runtime in the CommerceRuntime extension. -->
-    <CommerceRuntimeExtensionSettings Include="ext.Contoso.GasolineItemId">
+    <CommerceRuntimeExtensionSettings Include="ext.Golrang.GasolineItemId">
       <Value>gasoline</Value>
     </CommerceRuntimeExtensionSettings>
   </ItemGroup>

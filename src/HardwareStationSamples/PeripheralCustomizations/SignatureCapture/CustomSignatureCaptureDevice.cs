@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contoso.HardwareStation.Peripherals.DeviceCustomizations
+namespace Golrang.HardwareStation.Peripherals.DeviceCustomizations
 {
     /// <summary>
     /// A custom OPOS signature capture device handler.

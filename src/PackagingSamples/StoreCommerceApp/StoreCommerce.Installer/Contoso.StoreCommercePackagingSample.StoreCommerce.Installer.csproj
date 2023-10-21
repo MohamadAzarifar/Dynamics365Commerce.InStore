@@ -8,22 +8,22 @@
     <PackageReference Include="Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce" Version="$(CommerceSdkPackagesVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ChannelDatabase\Contoso.StoreCommercePackagingSample.ChannelDatabase.csproj">
+    <ProjectReference Include="..\ChannelDatabase\Golrang.StoreCommercePackagingSample.ChannelDatabase.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\CommerceRuntime\Contoso.StoreCommercePackagingSample.CommerceRuntime.csproj">
+    <ProjectReference Include="..\CommerceRuntime\Golrang.StoreCommercePackagingSample.CommerceRuntime.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\HardwareStation\Contoso.StoreCommercePackagingSample.HardwareStation.csproj">
+    <ProjectReference Include="..\HardwareStation\Golrang.StoreCommercePackagingSample.HardwareStation.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\Pos\Contoso.StoreCommercePackagingSample.Pos.csproj">
+    <ProjectReference Include="..\Pos\Golrang.StoreCommercePackagingSample.Pos.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <!-- Settings included in the CommerceRuntimeExtensionSettings item group will be added to the generated CommerceRuntime config file and available at runtime in the CommerceRuntime extension. -->
-    <CommerceRuntimeExtensionSettings Include="ext.Contoso.IncludeExtensionPropertiesInProductSearch">
+    <CommerceRuntimeExtensionSettings Include="ext.Golrang.IncludeExtensionPropertiesInProductSearch">
       <Value>true</Value>
     </CommerceRuntimeExtensionSettings>
   </ItemGroup>

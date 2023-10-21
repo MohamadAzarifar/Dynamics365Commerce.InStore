@@ -7,7 +7,7 @@
  * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
  */
 
-namespace Contoso.CommerceRuntime.DataModel
+namespace Golrang.CommerceRuntime.DataModel
 {
     using System.Runtime.Serialization;
     using Microsoft.Dynamics.Commerce.Runtime.ComponentModel.DataAnnotations;

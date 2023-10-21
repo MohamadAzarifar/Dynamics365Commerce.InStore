@@ -46,8 +46,8 @@ namespace GasStationSample.CommerceRuntime
             var extensionPackageDefinition = new ExtensionPackageDefinition();
 
             // Should match the PackageName used when packaging the customization package (i.e. in CustomizationPackage.props).
-            extensionPackageDefinition.Name = "Contoso.GasStationSample";
-            extensionPackageDefinition.Publisher = "Contoso";
+            extensionPackageDefinition.Name = "Golrang.GasStationSample";
+            extensionPackageDefinition.Publisher = "Golrang";
             extensionPackageDefinition.IsEnabled = true;
 
             getExtensionsResponse.ExtensionPackageDefinitions.Add(extensionPackageDefinition);

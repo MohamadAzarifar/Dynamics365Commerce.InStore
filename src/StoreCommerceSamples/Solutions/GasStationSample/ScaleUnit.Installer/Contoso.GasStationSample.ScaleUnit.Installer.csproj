@@ -11,10 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CommerceRuntime\Contoso.GasStationSample.CommerceRuntime.csproj">
+    <ProjectReference Include="..\CommerceRuntime\Golrang.GasStationSample.CommerceRuntime.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\POS\Contoso.GasStationSample.Pos.csproj">
+    <ProjectReference Include="..\POS\Golrang.GasStationSample.Pos.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

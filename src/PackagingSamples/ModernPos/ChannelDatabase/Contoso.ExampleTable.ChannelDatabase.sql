@@ -9,10 +9,10 @@
 
  -- Create the extension table to store the custom fields.
 
-IF (SELECT OBJECT_ID('[ext].[CONTOSO_EXAMPLETABLE]')) IS NULL 
+IF (SELECT OBJECT_ID('[ext].[Golrang_EXAMPLETABLE]')) IS NULL 
 BEGIN
     CREATE TABLE
-        [ext].[CONTOSO_EXAMPLETABLE]
+        [ext].[Golrang_EXAMPLETABLE]
     (
         [EXAMPLEID]     BIGINT IDENTITY(1,1) NOT NULL,
         [EXAMPLEINT]    INT NOT NULL DEFAULT ((0)),
@@ -23,20 +23,20 @@ BEGIN
         ) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
     ) ON [PRIMARY]
 
-    ALTER TABLE [ext].[CONTOSO_EXAMPLETABLE] WITH CHECK ADD CHECK (([EXAMPLEID]<>(0)))
+    ALTER TABLE [ext].[Golrang_EXAMPLETABLE] WITH CHECK ADD CHECK (([EXAMPLEID]<>(0)))
 END
 GO
 
-GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[CONTOSO_EXAMPLETABLE] TO [DataSyncUsersRole]
+GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[Golrang_EXAMPLETABLE] TO [DataSyncUsersRole]
 GO
 
 -- Create a stored procedure CRT can use to add entries to the custom table.
 
-IF OBJECT_ID(N'[ext].[CONTOSO_INSERTEXAMPLE]', N'P') IS NOT NULL
-    DROP PROCEDURE [ext].[CONTOSO_INSERTEXAMPLE]
+IF OBJECT_ID(N'[ext].[Golrang_INSERTEXAMPLE]', N'P') IS NOT NULL
+    DROP PROCEDURE [ext].[Golrang_INSERTEXAMPLE]
 GO
 
-CREATE PROCEDURE [ext].[CONTOSO_INSERTEXAMPLE]
+CREATE PROCEDURE [ext].[Golrang_INSERTEXAMPLE]
     @i_ExampleInt    INT,
     @s_ExampleString NVARCHAR(64)
 AS
@@ -44,7 +44,7 @@ BEGIN
     SET NOCOUNT ON
 
     INSERT INTO
-         ext.CONTOSO_EXAMPLETABLE
+         ext.Golrang_EXAMPLETABLE
         (EXAMPLEINT, EXAMPLESTRING)
     OUTPUT
         INSERTED.EXAMPLEID
@@ -53,42 +53,42 @@ BEGIN
 END;
 GO
 
-GRANT EXECUTE ON [ext].[CONTOSO_INSERTEXAMPLE] TO [UsersRole];
+GRANT EXECUTE ON [ext].[Golrang_INSERTEXAMPLE] TO [UsersRole];
 GO
 
-GRANT EXECUTE ON [ext].[CONTOSO_INSERTEXAMPLE] TO [DeployExtensibilityRole];
+GRANT EXECUTE ON [ext].[Golrang_INSERTEXAMPLE] TO [DeployExtensibilityRole];
 GO
 
 -- Create the custom view that can query a complete Example Entity.
 
-IF (SELECT OBJECT_ID('[ext].[CONTOSO_EXAMPLEVIEW]')) IS NOT NULL
-    DROP VIEW [ext].[CONTOSO_EXAMPLEVIEW]
+IF (SELECT OBJECT_ID('[ext].[Golrang_EXAMPLEVIEW]')) IS NOT NULL
+    DROP VIEW [ext].[Golrang_EXAMPLEVIEW]
 GO
 
-CREATE VIEW [ext].[CONTOSO_EXAMPLEVIEW] AS
+CREATE VIEW [ext].[Golrang_EXAMPLEVIEW] AS
 (
     SELECT
         et.EXAMPLEINT,
         et.EXAMPLESTRING,
         et.EXAMPLEID
     FROM
-        [ext].[CONTOSO_EXAMPLETABLE] et
+        [ext].[Golrang_EXAMPLETABLE] et
 )
 GO
 
-GRANT SELECT ON OBJECT::[ext].[CONTOSO_EXAMPLEVIEW] TO [UsersRole];
+GRANT SELECT ON OBJECT::[ext].[Golrang_EXAMPLEVIEW] TO [UsersRole];
 GO
 
-GRANT SELECT ON OBJECT::[ext].[CONTOSO_EXAMPLEVIEW] TO [DeployExtensibilityRole];
+GRANT SELECT ON OBJECT::[ext].[Golrang_EXAMPLEVIEW] TO [DeployExtensibilityRole];
 GO
 
 -- Create a stored procedure CRT can use to perform updates.
 
-IF OBJECT_ID(N'[ext].[CONTOSO_UPDATEEXAMPLE]', N'P') IS NOT NULL
-    DROP PROCEDURE [ext].[CONTOSO_UPDATEEXAMPLE]
+IF OBJECT_ID(N'[ext].[Golrang_UPDATEEXAMPLE]', N'P') IS NOT NULL
+    DROP PROCEDURE [ext].[Golrang_UPDATEEXAMPLE]
 GO
 
-CREATE PROCEDURE [ext].[CONTOSO_UPDATEEXAMPLE]
+CREATE PROCEDURE [ext].[Golrang_UPDATEEXAMPLE]
     @bi_Id           BIGINT,
     @i_ExampleInt    INT,
     @s_ExampleString NVARCHAR(64)
@@ -97,7 +97,7 @@ BEGIN
     SET NOCOUNT ON
 
     UPDATE
-        ext.CONTOSO_EXAMPLETABLE
+        ext.Golrang_EXAMPLETABLE
     SET
         EXAMPLEINT = @i_ExampleInt,
         EXAMPLESTRING = @s_ExampleString
@@ -106,33 +106,33 @@ BEGIN
 END;
 GO
 
-GRANT EXECUTE ON [ext].[CONTOSO_UPDATEEXAMPLE] TO [UsersRole];
+GRANT EXECUTE ON [ext].[Golrang_UPDATEEXAMPLE] TO [UsersRole];
 GO
 
-GRANT EXECUTE ON [ext].[CONTOSO_UPDATEEXAMPLE] TO [DeployExtensibilityRole];
+GRANT EXECUTE ON [ext].[Golrang_UPDATEEXAMPLE] TO [DeployExtensibilityRole];
 GO
 
 -- Create a stored procedure CRT can use to delete Example Entities.
 
-IF OBJECT_ID(N'[ext].[CONTOSO_DELETEEXAMPLE]', N'P') IS NOT NULL
-    DROP PROCEDURE [ext].CONTOSO_DELETEEXAMPLE
+IF OBJECT_ID(N'[ext].[Golrang_DELETEEXAMPLE]', N'P') IS NOT NULL
+    DROP PROCEDURE [ext].Golrang_DELETEEXAMPLE
 GO
 
-CREATE PROCEDURE [ext].CONTOSO_DELETEEXAMPLE
+CREATE PROCEDURE [ext].Golrang_DELETEEXAMPLE
     @bi_Id           BIGINT
 AS
 BEGIN
     SET NOCOUNT ON
 
     DELETE FROM
-        ext.CONTOSO_EXAMPLETABLE
+        ext.Golrang_EXAMPLETABLE
     WHERE
         EXAMPLEID = @bi_Id
 END;
 GO
 
-GRANT EXECUTE ON [ext].CONTOSO_DELETEEXAMPLE TO [UsersRole];
+GRANT EXECUTE ON [ext].Golrang_DELETEEXAMPLE TO [UsersRole];
 GO
 
-GRANT EXECUTE ON [ext].CONTOSO_DELETEEXAMPLE TO [DeployExtensibilityRole];
+GRANT EXECUTE ON [ext].Golrang_DELETEEXAMPLE TO [DeployExtensibilityRole];
 GO

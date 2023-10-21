@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CommerceRuntime\Contoso.ModernPosPackagingSample.CommerceRuntime.csproj" />
+    <ProjectReference Include="..\CommerceRuntime\Golrang.ModernPosPackagingSample.CommerceRuntime.csproj" />
   </ItemGroup>
 
   <Target Name="ContentIncludeKnockoutLibrary" BeforeTargets="AssignTargetPaths" DependsOnTargets="RunResolvePackageDependencies">

@@ -1,6 +1,6 @@
 ﻿namespace Microsoft.Dynamics
 {
-    namespace Contoso.HardwareStation.Peripherals
+    namespace Golrang.HardwareStation.Peripherals
     {
         using System;
         using System.Collections.Generic;
@@ -61,7 +61,7 @@
                         this.Open(openPrinterRequest.DeviceName);
                         return await openPrinterRequest.RequestContext.Runtime.ExecuteNextAsync<Response>(
                             this, openPrinterRequest, openPrinterRequest.RequestContext, true, HandlerName).ConfigureAwait(false);
-                    
+
                     case PrintPrinterDeviceRequest printRequest:
                         // If print request is for X- or Z-report then center receipt content
                         if (printRequest.Header.Contains("X-Report") || printRequest.Header.Contains("Z-Report"))
@@ -78,12 +78,12 @@
 
                         return await printRequest.RequestContext.Runtime.ExecuteNextAsync<Response>(
                             this, printRequest, printRequest.RequestContext, true, HandlerName).ConfigureAwait(false);
-                    
+
                     case ClosePrinterDeviceRequest closePrinterRequest:
                         this.Close();
                         return await closePrinterRequest.RequestContext.Runtime.ExecuteNextAsync<Response>(
                             this, closePrinterRequest, closePrinterRequest.RequestContext, true, HandlerName).ConfigureAwait(false);
-                    
+
                     default:
                         throw new NotSupportedException(string.Format("Request '{0}' is not supported.", request.GetType()));
                 }

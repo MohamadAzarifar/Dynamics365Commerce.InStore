@@ -7,7 +7,7 @@
  * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
  */
 
-namespace Contoso.CommerceRuntime
+namespace Golrang.CommerceRuntime
 {
     using System;
     using System.Collections.Generic;
@@ -46,8 +46,8 @@ namespace Contoso.CommerceRuntime
             var extensionPackageDefinition = new ExtensionPackageDefinition();
 
             // Should match the PackageName used when packaging the customization package (i.e. in CustomizationPackage.props).
-            extensionPackageDefinition.Name = "Contoso.StoreCommercePackagingSample";
-            extensionPackageDefinition.Publisher = "Contoso";
+            extensionPackageDefinition.Name = "Golrang.StoreCommercePackagingSample";
+            extensionPackageDefinition.Publisher = "Golrang";
             extensionPackageDefinition.IsEnabled = true;
 
             getExtensionsResponse.ExtensionPackageDefinitions.Add(extensionPackageDefinition);

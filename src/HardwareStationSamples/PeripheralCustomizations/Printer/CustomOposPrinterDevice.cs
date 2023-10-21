@@ -1,6 +1,6 @@
 ﻿namespace Microsoft.Dynamics
 {
-    namespace Contoso.HardwareStation.Peripherals
+    namespace Golrang.HardwareStation.Peripherals
     {
         using System;
         using System.Collections.Generic;
@@ -326,7 +326,7 @@
             {
                 try
                 {
-                    return (bool)await GetOposPropertyValueAsync(context, "CapRecPapercut").ConfigureAwait(false);;
+                    return (bool)await GetOposPropertyValueAsync(context, "CapRecPapercut").ConfigureAwait(false); ;
                 }
                 catch (Exception ex)
                 {

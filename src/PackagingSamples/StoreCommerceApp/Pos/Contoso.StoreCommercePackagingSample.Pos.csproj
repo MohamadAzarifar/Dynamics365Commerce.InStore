@@ -17,6 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CommerceRuntime\Contoso.StoreCommercePackagingSample.CommerceRuntime.csproj" />
+    <ProjectReference Include="..\CommerceRuntime\Golrang.StoreCommercePackagingSample.CommerceRuntime.csproj" />
   </ItemGroup>
 </Project>

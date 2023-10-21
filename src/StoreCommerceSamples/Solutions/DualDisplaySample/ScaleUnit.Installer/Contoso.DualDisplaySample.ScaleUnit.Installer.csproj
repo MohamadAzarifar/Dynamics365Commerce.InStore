@@ -11,10 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CommerceRuntime\Contoso.DualDisplaySample.CommerceRuntime.csproj">
+    <ProjectReference Include="..\CommerceRuntime\Golrang.DualDisplaySample.CommerceRuntime.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\POS\Contoso.DualDisplaySample.Pos.csproj">
+    <ProjectReference Include="..\POS\Golrang.DualDisplaySample.Pos.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

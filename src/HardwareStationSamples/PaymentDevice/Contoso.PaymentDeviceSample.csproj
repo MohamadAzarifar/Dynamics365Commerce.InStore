@@ -2,7 +2,7 @@
   <Import Project="..\CustomizationPackage.props" />
 
   <PropertyGroup>
-    <RootNamespace>Contoso.HardwareStation.Peripherals.PaymentDevice</RootNamespace>
+    <RootNamespace>Golrang.HardwareStation.Peripherals.PaymentDevice</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>

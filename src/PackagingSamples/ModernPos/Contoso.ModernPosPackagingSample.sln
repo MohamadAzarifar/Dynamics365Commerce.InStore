@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 15.0.0.0
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Contoso.ModernPosPackagingSample.ModernPos", "ModernPos\Contoso.ModernPosPackagingSample.ModernPos.jsproj", "{20292722-7895-4388-812B-837317D7FC0C}"
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Golrang.ModernPosPackagingSample.ModernPos", "ModernPos\Golrang.ModernPosPackagingSample.ModernPos.jsproj", "{20292722-7895-4388-812B-837317D7FC0C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.ModernPosPackagingSample.CommerceRuntime", "CommerceRuntime\Contoso.ModernPosPackagingSample.CommerceRuntime.csproj", "{AE7BFC80-DA85-4EE3-BCCD-56E7F04693E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Golrang.ModernPosPackagingSample.CommerceRuntime", "CommerceRuntime\Golrang.ModernPosPackagingSample.CommerceRuntime.csproj", "{AE7BFC80-DA85-4EE3-BCCD-56E7F04693E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.ModernPosPackagingSample.Pos", "Pos.Extension\Contoso.ModernPosPackagingSample.Pos.csproj", "{7F899A75-E3C0-4C7A-9455-371AD1876E80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Golrang.ModernPosPackagingSample.Pos", "Pos.Extension\Golrang.ModernPosPackagingSample.Pos.csproj", "{7F899A75-E3C0-4C7A-9455-371AD1876E80}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.ModernPosPackagingSample.ModernPos.Installer", "ModernPos.Installer\Contoso.ModernPosPackagingSample.ModernPos.Installer.csproj", "{76552A8D-6394-468E-8593-6EF9E789666F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Golrang.ModernPosPackagingSample.ModernPos.Installer", "ModernPos.Installer\Golrang.ModernPosPackagingSample.ModernPos.Installer.csproj", "{76552A8D-6394-468E-8593-6EF9E789666F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.ModernPosPackagingSample.ChannelDatabase", "ChannelDatabase\Contoso.ModernPosPackagingSample.ChannelDatabase.csproj", "{A04650E5-FD87-46B9-B075-822C183F3528}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Golrang.ModernPosPackagingSample.ChannelDatabase", "ChannelDatabase\Golrang.ModernPosPackagingSample.ChannelDatabase.csproj", "{A04650E5-FD87-46B9-B075-822C183F3528}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

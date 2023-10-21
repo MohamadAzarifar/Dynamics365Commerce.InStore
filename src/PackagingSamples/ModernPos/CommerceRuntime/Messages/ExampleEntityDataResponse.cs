@@ -7,10 +7,10 @@
  * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
  */
 
-namespace Contoso.CommerceRuntime.Messages
+namespace Golrang.CommerceRuntime.Messages
 {
     using System.Runtime.Serialization;
-    using Contoso.CommerceRuntime.DataModel;
+    using Golrang.CommerceRuntime.DataModel;
     using Microsoft.Dynamics.Commerce.Runtime;
     using Microsoft.Dynamics.Commerce.Runtime.Messages;
 

@@ -10,9 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PaymentDevice\Contoso.PaymentDeviceSample.csproj">
+    <ProjectReference Include="..\PaymentDevice\Golrang.PaymentDeviceSample.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\PeripheralCustomizations\Contoso.PeripheralCustomizations.csproj" />
+    <ProjectReference Include="..\PeripheralCustomizations\Golrang.PeripheralCustomizations.csproj" />
   </ItemGroup>
 </Project>

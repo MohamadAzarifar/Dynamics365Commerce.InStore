@@ -7,7 +7,7 @@
  * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
  */
 
-namespace Contoso.CommerceRuntime
+namespace Golrang.CommerceRuntime
 {
     using System;
     using System.Collections.Generic;
@@ -20,8 +20,8 @@ namespace Contoso.CommerceRuntime
     public class AddExtensionPropertiesToProductSearchResults : IRequestTriggerAsync
     {
         // This key must match the name of the setting included in the CommerceRuntimeExtensionSettings.
-        private const string IncludeExtensionPropertiesInProductSearchKey = "ext.Contoso.IncludeExtensionPropertiesInProductSearch";
-        private const string ExtensionPropertyName = "CONTOSO_PRODUCT_VERSION";
+        private const string IncludeExtensionPropertiesInProductSearchKey = "ext.Golrang.IncludeExtensionPropertiesInProductSearch";
+        private const string ExtensionPropertyName = "Golrang_PRODUCT_VERSION";
 
         /// <summary>
         /// Gets the supported requests for this trigger.

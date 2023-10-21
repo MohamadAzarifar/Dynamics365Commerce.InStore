@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "./devDependencies/schemas/manifestSchema.json",
-  "name": "Contoso.ModernPosPackagingSample",
-  "publisher": "Contoso",
+  "name": "Golrang.ModernPosPackagingSample",
+  "publisher": "Golrang",
   "version": "1.0.0",
   "minimumPosVersion": "9.28.0.0",
   "description": "An extension package containing Modern POS samples to showcase how to create a Modern POS App package and installer.",
@@ -14,7 +14,7 @@
   ],
   "components": {
     "resources": {
-      "supportedUICultures": [ "en-US" ],
+      "supportedUICultures": ["en-US"],
       "fallbackUICulture": "en-US",
       "culturesDirectoryPath": "Resources/Strings",
       "stringResourcesFileName": "resources.resjson"
@@ -28,8 +28,12 @@
             "modulePath": "ViewExtensions/Search/CustomProductSearchColumns"
           },
           "productAppBarCommands": [
-            { "modulePath": "ViewExtensions/Search/NavigateToKnockoutSamplesViewCommand" },
-            { "modulePath": "ViewExtensions/Search/NavigateToExampleViewCommand" }
+            {
+              "modulePath": "ViewExtensions/Search/NavigateToKnockoutSamplesViewCommand"
+            },
+            {
+              "modulePath": "ViewExtensions/Search/NavigateToExampleViewCommand"
+            }
           ]
         },
         "SimpleProductDetailsView": {

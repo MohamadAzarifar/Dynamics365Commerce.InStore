@@ -5,8 +5,8 @@
     <Version>$(MajorVersion).$(BuildNumber)</Version>
   </PropertyGroup>
   <PropertyGroup>
-    <Publisher Condition="'$(Publisher)' == ''">CN=Contoso Ltd.</Publisher>
-    <PublisherDisplayName Condition="'$(PublisherDisplayName)' == ''">Contoso Ltd.</PublisherDisplayName>
+    <Publisher Condition="'$(Publisher)' == ''">CN=Golrang Ltd.</Publisher>
+    <PublisherDisplayName Condition="'$(PublisherDisplayName)' == ''">Golrang Ltd.</PublisherDisplayName>
   </PropertyGroup>
   <PropertyGroup>
     <!-- Workaround for breaking changes in PackageDefinitions metadata. https://github.com/dotnet/sdk/issues/30809 -->

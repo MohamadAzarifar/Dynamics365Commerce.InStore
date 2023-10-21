@@ -6,8 +6,8 @@
  * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
  * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
  */
- 
-namespace Contoso.CommerceRuntime.Hosting
+
+namespace Golrang.CommerceRuntime.Hosting
 {
     using System.Threading.Tasks;
     using Microsoft.Dynamics.Commerce.Runtime;

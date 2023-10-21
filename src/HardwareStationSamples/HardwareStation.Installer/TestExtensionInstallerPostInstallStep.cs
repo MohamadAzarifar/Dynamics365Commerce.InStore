@@ -1,4 +1,4 @@
-﻿namespace Contoso.HardwareStation.Installer
+﻿namespace Golrang.HardwareStation.Installer
 {
     using System.Threading.Tasks;
     using Microsoft.Dynamics.Commerce.Sdk.Installers;

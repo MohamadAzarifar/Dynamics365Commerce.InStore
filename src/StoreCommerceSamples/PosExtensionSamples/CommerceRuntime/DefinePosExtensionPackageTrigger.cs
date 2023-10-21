@@ -31,8 +31,8 @@
             var extensionPackageDefinition = new ExtensionPackageDefinition();
 
             // Should match the PackageName used when packaging the customization package (i.e. in CustomizationPackage.props).
-            extensionPackageDefinition.Name = "Contoso.PosExtensionSamples";
-            extensionPackageDefinition.Publisher = "Contoso";
+            extensionPackageDefinition.Name = "Golrang.PosExtensionSamples";
+            extensionPackageDefinition.Publisher = "Golrang";
             extensionPackageDefinition.IsEnabled = true;
 
             getExtensionsResponse.ExtensionPackageDefinitions.Add(extensionPackageDefinition);

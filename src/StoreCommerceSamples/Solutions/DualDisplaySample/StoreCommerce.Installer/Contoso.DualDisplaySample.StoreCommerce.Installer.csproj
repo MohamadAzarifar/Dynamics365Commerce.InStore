@@ -8,10 +8,10 @@
     <PackageReference Include="Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce" Version="$(CommerceSdkPackagesVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CommerceRuntime\Contoso.DualDisplaySample.CommerceRuntime.csproj">
+    <ProjectReference Include="..\CommerceRuntime\Golrang.DualDisplaySample.CommerceRuntime.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\Pos\Contoso.DualDisplaySample.Pos.csproj">
+    <ProjectReference Include="..\Pos\Golrang.DualDisplaySample.Pos.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

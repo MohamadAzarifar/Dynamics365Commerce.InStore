@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CommerceRuntime\Contoso.PosExtensionSamples.CommerceRuntime.csproj" />
+    <ProjectReference Include="..\CommerceRuntime\Golrang.PosExtensionSamples.CommerceRuntime.csproj" />
   </ItemGroup>
 
   <Target Name="ContentIncludeKnockoutLibrary" BeforeTargets="AssignTargetPaths" DependsOnTargets="RunResolvePackageDependencies">

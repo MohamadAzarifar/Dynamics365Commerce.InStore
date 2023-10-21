@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Contoso.ModernPos.Installer": {
+    "Golrang.ModernPos.Installer": {
       "commandName": "Project",
       "commandLineArgs": "install"
     }

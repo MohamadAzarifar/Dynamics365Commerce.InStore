@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Contoso.HardwareStation.Installer": {
+    "Golrang.HardwareStation.Installer": {
       "commandName": "Project",
       "commandLineArgs": "install"
     }

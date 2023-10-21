@@ -14,7 +14,7 @@ NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU H
  PROPER MEASURES SHOULD BE TAKEN TO ENSURE THAT THE PA-DSS AND PCI DSS REQUIREMENTS ARE MET.
 */
 
-namespace Contoso.Commerce.HardwareStation.PaymentSample
+namespace Golrang.Commerce.HardwareStation.PaymentSample
 {
     using System;
     using System.Collections.Generic;
@@ -57,7 +57,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
     public class PaymentDeviceSample : INamedRequestHandler, IDisposable
 #pragma warning restore CS0618 // Type or member is obsolete
     {
-        private PaySdk.PaymentProperty[] merchantProperties;      
+        private PaySdk.PaymentProperty[] merchantProperties;
         private string paymentConnectorName;
         private SettingsInfo terminalSettings;
         private CancellationTokenSource timeoutTask;
@@ -107,7 +107,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
         /// <returns>The outgoing response message.</returns>
         public Response Execute(Request request)
         {
-             ThrowIf.Null(request, nameof(request));
+            ThrowIf.Null(request, nameof(request));
 
             switch (request)
             {

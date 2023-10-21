@@ -1,7 +1,7 @@
 {
   "$schema": "./devDependencies/schemas/manifestSchema.json",
-  "name": "Contoso.PosExtensionSamples",
-  "publisher": "Contoso",
+  "name": "Golrang.PosExtensionSamples",
+  "publisher": "Golrang",
   "version": "1.0.0.0",
   "minimumPosVersion": "9.28.0.0",
   "description": "A collection of samples that show how to extend pos.",
@@ -14,7 +14,7 @@
   ],
   "components": {
     "resources": {
-      "supportedUICultures": [ "en-US" ],
+      "supportedUICultures": ["en-US"],
       "fallbackUICulture": "en-US",
       "culturesDirectoryPath": "Resources",
       "stringResourcesFileName": "strings.resjson"

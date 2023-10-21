@@ -37,8 +37,8 @@
             var extensionPackageDefinition = new ExtensionPackageDefinition();
 
             // Should match the PackageName used when packaging the customization package (i.e. in CustomizationPackage.props).
-            extensionPackageDefinition.Name = "Contoso.Commerce.PaymentDevice";
-            extensionPackageDefinition.Publisher = "Contoso";
+            extensionPackageDefinition.Name = "Golrang.Commerce.PaymentDevice";
+            extensionPackageDefinition.Publisher = "Golrang";
             extensionPackageDefinition.IsEnabled = true;
 
             getExtensionsResponse.ExtensionPackageDefinitions.Add(extensionPackageDefinition);

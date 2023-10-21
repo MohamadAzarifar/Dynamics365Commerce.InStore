@@ -1,4 +1,4 @@
-﻿namespace Contoso.Commerce.HardwareStation.Peripherals
+﻿namespace Golrang.Commerce.HardwareStation.Peripherals
 {
     using System.Text.RegularExpressions;
     using System.Threading.Tasks;

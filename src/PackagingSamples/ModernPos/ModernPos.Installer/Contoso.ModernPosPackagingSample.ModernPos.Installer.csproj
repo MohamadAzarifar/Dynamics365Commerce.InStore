@@ -8,10 +8,10 @@
     <PackageReference Include="Microsoft.Dynamics.Commerce.Sdk.Installers.ModernPos" Version="$(CommerceSdkPackagesVersion)" />
   </ItemGroup>
   <ItemGroup>
-	<ProjectReference Include="..\ChannelDatabase\Contoso.ModernPosPackagingSample.ChannelDatabase.csproj">
+	<ProjectReference Include="..\ChannelDatabase\Golrang.ModernPosPackagingSample.ChannelDatabase.csproj">
 	  <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 	</ProjectReference>
-    <ProjectReference Include="..\ModernPos\Contoso.ModernPosPackagingSample.ModernPos.jsproj">
+    <ProjectReference Include="..\ModernPos\Golrang.ModernPosPackagingSample.ModernPos.jsproj">
 	  <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 	</ProjectReference>
   </ItemGroup>

@@ -7,7 +7,7 @@
  * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
  */
 
-namespace Contoso.CommerceRuntime
+namespace Golrang.CommerceRuntime
 {
     using System;
     using System.Collections.Generic;
@@ -18,8 +18,8 @@ namespace Contoso.CommerceRuntime
     using Microsoft.Dynamics.Commerce.Runtime.Data;
     using Microsoft.Dynamics.Commerce.Runtime.DataAccess.SqlServer;
     using Microsoft.Dynamics.Commerce.Runtime.Messages;
-    using Contoso.CommerceRuntime.DataModel;
-    using Contoso.CommerceRuntime.Messages;
+    using Golrang.CommerceRuntime.DataModel;
+    using Golrang.CommerceRuntime.Messages;
 
     /// <summary>
     /// Sample service to demonstrate managing a collection of entities.
@@ -91,7 +91,7 @@ namespace Contoso.CommerceRuntime
                 parameters["@i_ExampleInt"] = request.EntityData.IntData;
                 parameters["@s_ExampleString"] = request.EntityData.StringData;
                 var result = await databaseContext
-                    .ExecuteStoredProcedureAsync<ExampleEntity>("[ext].CONTOSO_INSERTEXAMPLE", parameters, request.QueryResultSettings)
+                    .ExecuteStoredProcedureAsync<ExampleEntity>("[ext].Golrang_INSERTEXAMPLE", parameters, request.QueryResultSettings)
                     .ConfigureAwait(continueOnCapturedContext: false);
                 insertedId = result.Item2.Single().UnusualEntityId;
             }
@@ -109,7 +109,7 @@ namespace Contoso.CommerceRuntime
                 {
                     DatabaseSchema = "ext",
                     Select = new ColumnSet("EXAMPLEINT", "EXAMPLESTRING", "EXAMPLEID"),
-                    From = "CONTOSO_EXAMPLEVIEW",
+                    From = "Golrang_EXAMPLEVIEW",
                     OrderBy = "EXAMPLEID",
                 };
 
@@ -140,7 +140,7 @@ namespace Contoso.CommerceRuntime
                 parameters["@s_ExampleString"] = request.UpdatedExampleEntity.StringData;
                 int sprocErrorCode =
                     await databaseContext
-                    .ExecuteStoredProcedureNonQueryAsync("[ext].CONTOSO_UPDATEEXAMPLE", parameters, request.QueryResultSettings)
+                    .ExecuteStoredProcedureNonQueryAsync("[ext].Golrang_UPDATEEXAMPLE", parameters, request.QueryResultSettings)
                     .ConfigureAwait(continueOnCapturedContext: false);
                 updateSuccess = (sprocErrorCode == 0);
             }
@@ -164,7 +164,7 @@ namespace Contoso.CommerceRuntime
                 parameters["@bi_Id"] = request.ExampleEntityKey;
                 int sprocErrorCode =
                     await databaseContext
-                    .ExecuteStoredProcedureNonQueryAsync("[ext].CONTOSO_DELETEEXAMPLE", parameters, request.QueryResultSettings)
+                    .ExecuteStoredProcedureNonQueryAsync("[ext].Golrang_DELETEEXAMPLE", parameters, request.QueryResultSettings)
                     .ConfigureAwait(continueOnCapturedContext: false);
                 deleteSuccess = sprocErrorCode == 0;
             }

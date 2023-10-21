@@ -11,10 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CommerceRuntime\Contoso.PosExtensionSamples.CommerceRuntime.csproj">
+    <ProjectReference Include="..\CommerceRuntime\Golrang.PosExtensionSamples.CommerceRuntime.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\Pos\Contoso.PosExtensionSamples.Pos.csproj">
+    <ProjectReference Include="..\Pos\Golrang.PosExtensionSamples.Pos.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
